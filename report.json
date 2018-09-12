@@ -1,0 +1,258 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Testing valid GET endpoint",
+        "description": "",
+        "id": "learn-how-to-use-karate-for-testing.;testing-valid-get-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 404500745,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "url \u0027http://localhost:8088/user/get\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027http://localhost:8088/user/get\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 343148402,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "method GET",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 395797,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Testing the exact response of a GET endpoint",
+        "description": "",
+        "id": "learn-how-to-use-karate-for-testing.;testing-the-exact-response-of-a-get-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5526270,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "url \u0027http://localhost:8088/user/get\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027http://localhost:8088/user/get\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9828497,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "method GET",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62389,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8041432,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "match $ \u003d\u003d {id:\"1234\", name:\"John Smith\"}",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "$",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 8
+                },
+                {
+                  "val": "{id:\"1234\", name:\"John Smith\"}",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Testing that GET response contains specific field",
+        "description": "",
+        "id": "learn-how-to-use-karate-for-testing.;testing-that-get-response-contains-specific-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5489181,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "url \u0027http://localhost:8088/user/get\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027http://localhost:8088/user/get\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8460823,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "method GET",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 70318,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 436777,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "match $ contains {id:\"1234\"}",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "$",
+                  "offset": 6
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " {id:\"1234\"}",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Learn How to use Karate for testing.",
+    "description": "",
+    "id": "learn-how-to-use-karate-for-testing.",
+    "keyword": "Feature",
+    "uri": "demo/demo.feature"
+  }
+]
